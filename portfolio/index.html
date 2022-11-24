@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="wirdth=device-wirdth, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/53331b204d.js" crossorigin="anonymous"></script>
+    </head>
+  <body>
+    <div id="header">
+       <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Co-curricular">Co-curricular</a></li>
+            <li><a href="#Certificates">Certificates</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+
+        </nav>
+         <div class="header-text">
+          <h1>Hi, I'm <span>Alankriti</span> Dadlani</h1>
+         </div>
+       </div>
+        
+    </div>
+    <!-- ---------about----------- -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="image/1.png">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p> Hey, I am Alankriti Dadlani.I am 19 years old. I am from MADHYA PRADESH<br> and currently pursuing B.tech in Computer science and engineering with specialization in Cloud Computing from SRM INSTITUTE OF TECHNOLOGY (ktr Campus). 
+          <br>I did my schooling from DPS,Bhopal.<br> My hobies include coding,singing and learning new languages.
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>IoT</span><br>Exploring myself more in Internet Of Things. </li>
+            <li><span>Singing</span><br>Working in the field of Vocal Music.</li>
+            <li><span>Emceeing</span><br>Compering</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2010-21</span><br>DPS (bhopal)</li>
+            <li><span>2021-present</span><br>SRMIST (Chennai)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ------co-curricual--------- -->
+<div id="Co-curricular">
+  <div class="container">
+    <h1 class="sub-title">Co-Curricular</h1>
+    <div class="Activity-list">
+     <div>
+      <i class="fa-regular fa-microphone-stand"></i>
+      <h2>Singing</h2>
+      <p> I have represented my school in many national and district level competitions. </p>
+     </div>
+     <div>
+        <i class="fa-solid fa-paintbrush"></i>
+      <h2>Painting</h2>
+      <p> I love creating new art in my past time.</p>
+     </div>
+     <div>
+      <i class="fa-regular fa-language"></i>
+      <h2>Languages</h2>
+      <p> I have participated in many intercultural fests like French Song Competition and Spell bee contests. I am fluent in Hindi,English,French and German.</p>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+<!-- ----------------certi------------------ -->
+<div id="Certificates">
+  <div class="container">
+    <h1 class="sub-title">Certificates</h1>
+    <div class="certificates">
+      <div class="cert1">
+        <img src="image/2.png">
+      </div>
+      <div class="cert1">
+        <img src="image/3.png">
+      </div>
+      <div class="cert1">
+        <img src="image/4.png">
+      </div>
+    </div>
+    </div>
+    <!-- ------------contact--------------- -->
+    <div id="Contacts">
+      <div class="container">
+
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="Contacts">
+            <p><i class="fa-solid fa-paper-plane"></i>alankriti.dadlani22@gmail.com</p>
+            <div class="socoal-icons">
+              <a href="https://www.linkedin.com/in/alankriti-dadlani-0747911a4/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="alankriti.dadlani22@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+      </div>
+  </div>
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+</script>
+  </body>
+  </html>
